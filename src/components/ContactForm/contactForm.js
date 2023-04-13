@@ -1,4 +1,4 @@
-import { Formik, validateYupSchema } from "formik";
+import { Formik, } from "formik";
 import toast, { Toaster } from "react-hot-toast";
 
 import * as Yup from 'yup';
@@ -47,14 +47,16 @@ return (
  <label>Name
    <StyledInput         
       type="text"
-      name="name"     
+      name="name"  
+      placeholder="Please enter name..."   
           />
         <StyledErrorMessage name="name" component="div" /> 
  </label>
  <label>Number
    <StyledInput         
       type="tel"
-      name="number"     
+      name="number" 
+      placeholder="Please enter number..."      
           />
           <StyledErrorMessage name="number" component="div" /> 
  </label>

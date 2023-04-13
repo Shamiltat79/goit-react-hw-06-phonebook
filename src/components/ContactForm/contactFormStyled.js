@@ -5,9 +5,9 @@ export const FormWrapper = styled(Form)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 500px; */
+  width: 400px;
   text-align: center;
-  /* margin: auto; */
+  margin: auto;
   padding: 24px;
    
   

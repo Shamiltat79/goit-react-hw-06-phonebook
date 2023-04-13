@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { ContactForm } from "components/ContactForm/contactForm";
-import { Container, Title } from "./AppStyled"; 
+import { Container, Title,TitleWrapper } from "./AppStyled"; 
 import { ContactFilter } from "components/ContactFilter/ContactFilter";
 import { ContactList } from "components/ContactList/ContactList";
 import { getContacts } from "redux/selectors";
@@ -10,13 +10,18 @@ export const App = () => {
   console.log(contacts);
   return (
     <>
-   <Container>
+    <TitleWrapper>
     <Title>PhoneBook</Title>
+    </TitleWrapper>
+   <Container>
     <ContactForm />
     </Container>
-    <Title>Contacts</Title>
-    <ContactList />
     <ContactFilter />
+    <TitleWrapper>
+    <Title>Contacts</Title>
+    </TitleWrapper>
+    <ContactList />
+    
     {/* <>
     {contacts.lenght > 0 ? 
       
