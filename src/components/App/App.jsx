@@ -5,6 +5,7 @@ import { ContactFilter } from "components/ContactFilter/ContactFilter";
 import { ContactList } from "components/ContactList/ContactList";
 import { getContacts } from "redux/selectors";
 
+
 export const App = () => {
   const contacts = useSelector(getContacts);
   console.log(contacts);

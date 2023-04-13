@@ -3,9 +3,9 @@ import { Contacts} from "components/ContactItem/ContactItem";
 import { getContacts, getFilter } from "redux/selectors";
 import { StyledContactList } from "./ContactListStyled";
 
-const getVisibleContacts = (contactsArr, filterValue) => {
+const getVisibleContacts = (contacts, filterValue) => {
     const normalizedContact = filterValue.toLowerCase();
-    return contactsArr.filter(({name}) => name.toLowerCase().includes(normalizedContact));
+    return contacts.filter(({name}) => name.toLowerCase().includes(normalizedContact));
 };
 
 export const ContactList = () => {
