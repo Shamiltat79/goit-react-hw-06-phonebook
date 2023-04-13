@@ -3,8 +3,8 @@ import { Contacts} from "components/ContactItem/ContactItem";
 import { getContacts, getFilter } from "redux/selectors";
 import { StyledContactList } from "./ContactListStyled";
 
-const getVisibleContacts = (contactsArr, filterArr) => {
-    const normalizedContact = filterArr.toLowerCase();
+const getVisibleContacts = (contactsArr, filterValue) => {
+    const normalizedContact = filterValue.toLowerCase();
     return contactsArr.filter(({name}) => name.toLowerCase().includes(normalizedContact));
 };
 
