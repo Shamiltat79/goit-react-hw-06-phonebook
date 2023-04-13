@@ -7,6 +7,7 @@ import { getContacts } from "redux/selectors";
 
 export const App = () => {
   const contacts = useSelector(getContacts);
+  console.log(contacts);
   return (
     <>
    <Container>
@@ -14,12 +15,17 @@ export const App = () => {
     <ContactForm />
     </Container>
     <Title>Contacts</Title>
-    {contacts.lenght > 0 ? (
-      <>
-      <ContactFilter />
-      <ContactList />
-      </>
-    ) : (<p>"There are no contacts in your phone book. Please add a contact!"</p>)}
+    <ContactList />
+    <ContactFilter />
+    {/* <>
+    {contacts.lenght > 0 ? 
+      
+      (
+      <ContactList />)
+       
+      :( <p>"There are no contacts in your phone book. Please add a contact!"</p>)}</> */}
+    
+     
    </>
   );
 };

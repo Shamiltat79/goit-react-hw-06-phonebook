@@ -43,5 +43,5 @@ export const StyledInput = styled(Field)`
 
 `
 export const StyledErrorMessage = styled(ErrorMessage)`
-color: red;
+color: black;
 `;

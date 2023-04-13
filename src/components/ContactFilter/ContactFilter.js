@@ -5,17 +5,17 @@ import { StyledInput, StyledLabel } from "./ContactFilterStyled";
 
 export const ContactFilter = () => {
     const dispatch = useDispatch();
-    const filter = useSelector(getFilter);
+    const filterValue = useSelector(getFilter);
     const handleFilter = evt => dispatch(setFilterValue(evt.target.value)); 
     return(
-<StyledLabel>
+<StyledLabel>Find contacts by name
     <StyledInput 
     type="text"
     name="filter"
-    value={filter}
-    minLength={2} 
+    value={filterValue}
     onChange={handleFilter} 
     />
+    <button type='submit'>Search</button>
 </StyledLabel>
     );
 }

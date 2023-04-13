@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import {  Field} from 'formik';
 
-export const StyledInput = styled(Field)`
+
+export const StyledInput = styled.input`
   font-size: 20px;
   margin-bottom: 15px;
   border-radius: 6px;
   border-color: white;
-  width: 100%;
+  width: 600px;
   outline: none;
   :focus{
     outline: none;
