@@ -1,14 +1,13 @@
-import { useSelector } from "react-redux";
+
 import { ContactForm } from "components/ContactForm/contactForm";
 import { Container, Title,TitleWrapper } from "./AppStyled"; 
 import { ContactFilter } from "components/ContactFilter/ContactFilter";
 import { ContactList } from "components/ContactList/ContactList";
-import { getContacts } from "redux/selectors";
+
 
 
 export const App = () => {
-  const contacts = useSelector(getContacts);
-  // console.log(contacts);
+ 
   return (
     <>
     <TitleWrapper>
