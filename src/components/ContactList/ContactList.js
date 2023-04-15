@@ -11,7 +11,7 @@ const filter = useSelector(getFilter);
 
 const getVisibleContacts = () => {
     const normalizedContact = filter.toLowerCase();
-    console.log(contacts);
+    // console.log(contacts);
     return contacts.filter(({name}) => name.toLowerCase().includes(normalizedContact));
     
 };
