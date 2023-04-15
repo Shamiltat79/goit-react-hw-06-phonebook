@@ -61,7 +61,7 @@ return (
           <StyledErrorMessage name="number" component="div" /> 
  </label>
             <button type="submit">Add contact</button>
-
+            <Toaster position="top-left" toastOptions={{ duration: 3000 }} />
 </FormWrapper>
     </Formik>
 )
